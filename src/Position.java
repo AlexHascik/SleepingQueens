@@ -6,16 +6,6 @@ public class Position {
     private Optional<SleepingQueenPosition> sleepingQueenPosition;
     private Optional<AwokenQueenPosition> awokenQueenPosition;
 
-//    public Position(HandPosition handPosition){
-//        this.handPosition = new HandPosition(handPosition.getCardIndex(), handPosition.getPlayerIndex());
-//    }
-//    public Position(SleepingQueenPosition sleepingQueenPosition){
-//        this.sleepingQueenPosition = new SleepingQueenPosition(sleepingQueenPosition.getCardIndex());
-//    }
-//    public Position(AwokenQueenPosition awokenQueenPosition){
-//        this.awokenQueenPosition = new AwokenQueenPosition(awokenQueenPosition.getCardIndex(), awokenQueenPosition.getPlayerIndex());
-//    }
-
     public Position(HandPosition handPosition){
         this.handPosition = Optional.of(handPosition);
     }
