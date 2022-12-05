@@ -48,4 +48,7 @@ public class Player {
         return playerState;
     }
 
+    public int getPlayerIdx() {
+        return playerIdx;
+    }
 }
