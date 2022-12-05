@@ -4,7 +4,13 @@ public class Hand {
 
     private int playerIdx;
 
-    public Optional<List<Card>> pickCards(){
+    public Hand(int playerIdx){
+        this.playerIdx = playerIdx;
+    }
+
+    public Optional<List<Card>> pickCards(List<HandPosition> positions){
+
+
         return null;
     }
     public Map<HandPosition, Card> removePickedCardsAndRedraw(){
@@ -19,4 +25,5 @@ public class Hand {
     public List<Card> getCards(){
         return null;
     }
+
 }

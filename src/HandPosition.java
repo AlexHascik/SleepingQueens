@@ -1,4 +1,4 @@
-public class HandPosition {
+public class HandPosition implements Position{
 
     private int cardIndex;
     private int playerIndex;

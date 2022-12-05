@@ -5,7 +5,7 @@ public class GameState {
     public int numberOfPlayers;
     public int onTurn;
     public Set<SleepingQueenPosition> sleepingQueens;
-    public Map<HandPosition, Optional<Card>> cards; // AKE KARTY...?
+    public Map<HandPosition, Optional<Card>> cards; //AKE KARTY...?
     public Map<AwokenQueenPosition, Queen> awokenQueens;
     public List<Card> cardsDiscardedLastTurn;
 

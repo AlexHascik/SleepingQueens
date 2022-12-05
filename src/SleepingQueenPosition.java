@@ -1,4 +1,4 @@
-public class SleepingQueenPosition {
+public class SleepingQueenPosition implements Position {
 
     private int cardIndex;
 
