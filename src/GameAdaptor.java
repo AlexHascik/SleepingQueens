@@ -21,22 +21,14 @@ public class GameAdaptor implements GamePlayerInterface {
     public String play(String player, String cards) {
         String [] c = cards.split(" ");
         cardsToSend = new ArrayList<>();
-        for (String s : c) {
-            for (int j = 0; j < s.length(); j++) {
-                switch (s.charAt(j)) {
-                    case 'h':
-                        j += 1;
-                        cardsToSend.add(new HandPosition(Integer.valueOf(s.charAt(j)), players.get(player)));
-                    case 'a':
-                        j+=1;
-                        cardsToSend.add(new AwokenQueenPosition(Integer.valueOf(s.charAt(j++)), Integer.valueOf(s.charAt(j))));
-                    case 's':
-                        //ako sa dostat nakoniec aby to nespadlo
-                        j+=1;
-                        cardsToSend.add(new SleepingQueenPosition(Integer.parseInt(s.substring(1))));
-                }
-            }
 
+        for(String command : cards.split(" ")){
+            int firstCardPosition = Integer.valueOf(command.charAt(1));
+            switch(command.charAt(0)){
+                case 'h': cardsToSend.add(new HandPosition(firstCardPosition,players.get(player)));
+                case 'a': cardsToSend.add(new AwokenQueenPosition(Integer.valueOf(command.charAt(2)), players.get(player)));
+                case 's': cardsToSend.add(new SleepingQueenPosition(Integer.parseInt(command.substring(1))));
+            }
         }
 
         game.play(players.get(player), cardsToSend);

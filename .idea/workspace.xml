@@ -3,20 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2c354058-0291-4e73-a0a8-9efd21c34744" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AwokenQueenPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AwokenQueenPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AwokenQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AwokenQueens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EvaluateAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvaluateAttack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameAdaptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObservable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HandPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QueenCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QueenCollection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SleepingQueenPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SleepingQueenPosition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SleepingQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SleepingQueens.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
