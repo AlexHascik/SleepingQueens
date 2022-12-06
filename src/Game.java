@@ -17,7 +17,6 @@ public class Game {
         }
         gameState = new GameState(numberOfPlayers, 0);
 
-
     }
 
     public void nextTurn(GameState gameState){
