@@ -39,6 +39,7 @@ public class Player {
                         AwokenQueenPosition queenToSleep = (AwokenQueenPosition) cards.get(1);
                         if(evaluateMagicWand.play(queenToSleep, queenToSleep.getPlayerIndex())) {
                             //consume cards
+                            hand.removePickedCardsAndRedraw();
                         }
                         break;
                     case NUMBER:

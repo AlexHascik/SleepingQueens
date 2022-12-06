@@ -6,6 +6,8 @@ public class Hand {
     private List<Card> cards;
     private List<Card> pickedCards;
 
+    private List<HandPosition> pickedCardPositions;
+
     public Hand(int playerIdx){
         this.playerIdx = playerIdx;
         cards = new ArrayList<>();
@@ -13,7 +15,7 @@ public class Hand {
     }
 
     public Optional<List<Card>> pickCards(List<HandPosition> positions){
-
+        pickedCardPositions = new ArrayList<>(positions);
         if(!positions.isEmpty()){
             for(HandPosition position : positions){
                 pickedCards.add(cards.get(position.getCardIndex()));
@@ -23,6 +25,7 @@ public class Hand {
         return Optional.empty();
     }
     public Map<HandPosition, Card> removePickedCardsAndRedraw(){
+
         return null;
     }
     public void returnPickedCards(){

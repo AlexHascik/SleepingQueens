@@ -18,4 +18,8 @@ public class PlayerState {
     public Map<Integer, Queen> getAwokenQueens(){
         return awokenQueens;
     }
+
+    public void setCards(Map<Integer, Optional<Card>> cards){
+        this.cards = new HashMap<>(cards);
+    }
 }

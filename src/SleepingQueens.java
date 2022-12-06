@@ -3,6 +3,7 @@ import java.util.*;
 public class SleepingQueens extends QueenCollection{
 
     private Map<Position, Queen> queens;
+    private Stack<Integer> emptyPlaces;
 
     public SleepingQueens(){
 
@@ -13,16 +14,27 @@ public class SleepingQueens extends QueenCollection{
         Collections.shuffle(pointsList);
         queens = new HashMap<>();
         for(int i = 0; i < 12; i++){ addQueen(new Queen(pointsList.get(i)));}
+        emptyPlaces = new Stack<>();
     }
 
     @Override
     void addQueen(Queen queen) {
-        queens.put(new SleepingQueenPosition(queens.size()), queen);
+        if(emptyPlaces.isEmpty()){
+            queens.put(new SleepingQueenPosition(queens.size()), queen);
+        } else {
+            queens.put(new SleepingQueenPosition(emptyPlaces.pop()), queen);
+        }
     }
 
     @Override
     Optional<Queen> removeQueen(SleepingQueenPosition position) {
-        return Optional.ofNullable(queens.remove(position));
+
+        Optional<Queen> toRemove = Optional.ofNullable(queens.remove(position));
+        if (toRemove.isPresent()) {
+            emptyPlaces.push(position.getCardIndex());
+        }
+        return toRemove;
+
     }
 
     @Override

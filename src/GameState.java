@@ -2,12 +2,12 @@ import java.util.*;
 
 public class GameState {
 
-    public int numberOfPlayers;
-    public int onTurn;
-    public Set<SleepingQueenPosition> sleepingQueens;
-    public Map<HandPosition, Optional<Card>> cards; //AKE KARTY...?
-    public Map<AwokenQueenPosition, Queen> awokenQueens;
-    public List<Card> cardsDiscardedLastTurn;
+    private int numberOfPlayers;
+    private int onTurn;
+    private Set<SleepingQueenPosition> sleepingQueens;
+    private Map<HandPosition, Optional<Card>> cards; //AKE KARTY...?
+    private Map<AwokenQueenPosition, Queen> awokenQueens;
+    private List<Card> cardsDiscardedLastTurn;
 
     public GameState(int numberOfPlayers, int onTurn){
         this.numberOfPlayers = numberOfPlayers;
@@ -20,4 +20,18 @@ public class GameState {
         cardsDiscardedLastTurn = new ArrayList<>();
 
     }
+
+    public void setSleepingQueens(Set<SleepingQueenPosition> sleepingQueens){
+        this.sleepingQueens = new HashSet<>(sleepingQueens);
+    }
+
+    public void setOnTurn(int onTurn){
+        this.onTurn = onTurn;
+    }
+
+    public int getOnTurn( ){
+        return onTurn;
+    }
+
+
 }

@@ -54,11 +54,24 @@ public class DrawingAndThrashPile {
     }
 
     public void newTurn(){
-
+        discardedThisTurn.clear();
     }
 
     public List<Card> getCardsDiscardedThisTurn(){
         return discardedThisTurn;
     }
+
+    public List<Card> drawAtStart(){
+        ArrayList<Card> toDraw = new ArrayList<>();
+        for(int i = 0; i < 5; i++){
+            int toDrawAndRemove = drawingPile.size()-1;
+            toDraw.add(drawingPile.get(toDrawAndRemove));
+            toDraw.remove(toDrawAndRemove);
+        }
+
+        return toDraw;
+    }
+
+
 
 }
