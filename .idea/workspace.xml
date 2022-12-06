@@ -4,12 +4,11 @@
     <list default="true" id="2c354058-0291-4e73-a0a8-9efd21c34744" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DrawingAndThrashPile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawingAndThrashPile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvaluateAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvaluateAttack.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HandPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HandPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoveQueen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MoveQueen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SleepingQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SleepingQueens.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,8 +47,8 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration name="SleepingQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SleepingQueens" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SleepingQueens" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -57,7 +56,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SleepingQueens" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

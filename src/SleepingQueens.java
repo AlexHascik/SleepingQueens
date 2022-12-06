@@ -13,8 +13,9 @@ public class SleepingQueens extends QueenCollection{
         //shuffle points so when creating new queens points are random
         Collections.shuffle(pointsList);
         queens = new HashMap<>();
-        for(int i = 0; i < 12; i++){ addQueen(new Queen(pointsList.get(i)));}
         emptyPlaces = new Stack<>();
+        for(int i = 0; i < 12; i++){ addQueen(new Queen(pointsList.get(i)));}
+
     }
 
     @Override

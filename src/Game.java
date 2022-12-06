@@ -13,12 +13,20 @@ public class Game {
 
         drawingAndThrashPile = new DrawingAndThrashPile();
         sleepingQueens = new SleepingQueens();
-//        for(int i = 0; i < numberOfPlayers; i++){
-//            Map<Integer, Optional<Card>>
-//            players.add(new Player(i));
-//            //este priradit hracom karty
-//        }
-        //
+        players = new ArrayList<>();
+
+
+
+        //vytvorime handy pre hracov, pridame referencie na discardandthrashpile, nasledne vytvorime hracov
+        Map<Integer, Hand> playerHands = new HashMap<>();
+        for(int i = 0; i < numberOfPlayers; i++){
+            Hand hand = new Hand(i,drawingAndThrashPile);
+            playerHands.put(i, hand);
+            MoveQueen moveQueen = new MoveQueen(playerHands, sleepingQueens);
+            EvaluateAttack evaluateAttack = new EvaluateAttack(CardType.DRAGON, playerHands, moveQueen);
+            players.add(new Player(i, hand, evaluateAttack, moveQueen));
+        }
+
         gameState = new GameState(numberOfPlayers, 0);
         //pridanie sleepingqueensposition do gamestateu
         Set<SleepingQueenPosition> sleepingQueenPositions = new HashSet<>();
@@ -37,6 +45,7 @@ public class Game {
             }
             player.getPlayerState().setCards(playerCards);
         }
+
 
 
     }
@@ -58,6 +67,6 @@ public class Game {
     }
 
     private void updateGameState(){
-     //asi az ked budem mat vsetko hotove
+
     }
 }

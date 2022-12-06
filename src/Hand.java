@@ -6,16 +6,17 @@ public class Hand {
     private List<Card> cards;
     private List<Card> pickedCards;
 
-    private List<HandPosition> pickedCardPositions;
+    private DrawingAndThrashPile drawingAndThrashPile;
 
-    public Hand(int playerIdx){
+    public Hand(int playerIdx, DrawingAndThrashPile drawingAndThrashPile){
         this.playerIdx = playerIdx;
         cards = new ArrayList<>();
         pickedCards = new ArrayList<>();
+        this.drawingAndThrashPile = drawingAndThrashPile;
     }
 
     public Optional<List<Card>> pickCards(List<HandPosition> positions){
-        pickedCardPositions = new ArrayList<>(positions);
+
         if(!positions.isEmpty()){
             for(HandPosition position : positions){
                 pickedCards.add(cards.get(position.getCardIndex()));
@@ -26,7 +27,15 @@ public class Hand {
     }
     public Map<HandPosition, Card> removePickedCardsAndRedraw(){
 
-        return null;
+        cards.removeAll(pickedCards);
+        Map<HandPosition, Card> toReturn = new HashMap<>();
+        List<Card> toDraw = drawingAndThrashPile.discardAndDraw(pickedCards);
+        for(int i = 0; i < toDraw.size(); i++){
+            toReturn.put(new HandPosition(i + cards.size(), playerIdx), toDraw.get(i));
+        }
+        cards.addAll(toDraw);
+        returnPickedCards();
+        return toReturn;
     }
     public void returnPickedCards(){
         pickedCards.clear();
