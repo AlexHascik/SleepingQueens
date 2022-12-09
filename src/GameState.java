@@ -33,5 +33,14 @@ public class GameState {
         return onTurn;
     }
 
+    public void setCards(Map<HandPosition, Optional<Card>> cards){
+        this.cards = new HashMap<>(cards);
+    }
+
+    public void setAwokenQueens(Map<AwokenQueenPosition, Queen> awokenQueens){
+        this.awokenQueens = new HashMap<>(awokenQueens);
+    }
+
+
 
 }

@@ -28,11 +28,12 @@ public class SleepingQueens extends QueenCollection{
     }
 
     @Override
-    Optional<Queen> removeQueen(SleepingQueenPosition position) {
+    Optional<Queen> removeQueen(Position position) {
 
         Optional<Queen> toRemove = Optional.ofNullable(queens.remove(position));
+
         if (toRemove.isPresent()) {
-            emptyPlaces.push(position.getCardIndex());
+            emptyPlaces.push(((SleepingQueenPosition)position).getCardIndex());
         }
         return toRemove;
 

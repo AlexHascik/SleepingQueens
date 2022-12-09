@@ -13,7 +13,6 @@ public class EvaluateAttack {
         this.defenseCardType = defenseCardType;
         this.moveQueen = moveQueen;
         this.playerHands = playerHands;
-
     }
     public boolean play(Position targetQueen, int targetPlayerIdx, int playerIdx){
         if(!(targetQueen instanceof AwokenQueenPosition)) { return false;}
@@ -27,7 +26,7 @@ public class EvaluateAttack {
             playerHands.get(targetPlayerIdx).pickCards(positions);
             playerHands.get(targetPlayerIdx).removePickedCardsAndRedraw();
         } else{
-            moveQueen.play(targetQueen,playerIdx );
+            moveQueen.play(targetQueen, playerIdx);
         }
         return true;
     }
