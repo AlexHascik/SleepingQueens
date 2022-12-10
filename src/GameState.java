@@ -41,6 +41,7 @@ public class GameState {
         this.awokenQueens = new HashMap<>(awokenQueens);
     }
 
-
-
+    public int getNumberOfPlayers() {
+        return numberOfPlayers;
+    }
 }

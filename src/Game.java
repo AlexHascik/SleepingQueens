@@ -9,7 +9,7 @@ public class Game {
     private DrawingAndThrashPile drawingAndThrashPile;
     private SleepingQueens sleepingQueens;
 
-
+    private final GameFinishedStrategy gameFinished;
     public Game(int numberOfPlayers){
 
         drawingAndThrashPile = new DrawingAndThrashPile();
@@ -49,13 +49,14 @@ public class Game {
         gameState.setCards(cards);
         updateGameState();
 
+        gameFinished = new GameFinished(playerAwokenQueens, numberOfPlayers);
+
 
 
 
     }
 
     public void nextTurn(GameState gameState){
-//        gameState.onTurn = (gameState.onTurn + 1) % players.size();
         gameState.setOnTurn((gameState.getOnTurn() +1 ) % players.size());
     }
 
@@ -67,6 +68,12 @@ public class Game {
 
         if(players.get(playerIdx).play(cards)){
             gameState.setOnTurn((gameState.getOnTurn() + 1) % players.size());
+            updateGameState();
+            Optional<Integer> winner = gameFinished.isFinished();
+            if(winner.isPresent()){
+                gameState.setOnTurn(-1);
+                System.out.println("Player " + winner.get() + "won");
+            }
         } else{
             System.out.println("Try again");
         }

@@ -8,10 +8,15 @@ public class GameAdaptor implements GamePlayerInterface {
     private ArrayList<Position> cardsToSend;
     private Map<String, Integer> players;
 
-    public GameAdaptor(){
+    private GameObservable gameObservable;
+    public GameAdaptor(GameObservable gameObservable){
 
-//        this.game = game;
-//        game = new Game();
+        if(gameObservable.getPlayerCount() < 2){
+            System.out.println("You need at least 2 players to play. Game was not created.");
+        } else{
+            this.gameObservable = gameObservable;
+            game = new Game(gameObservable.getPlayerCount());
+        }
 
     }
 
@@ -33,16 +38,8 @@ public class GameAdaptor implements GamePlayerInterface {
 
         game.play(players.get(player), cardsToSend);
 
-        return "Turn executed";
+        return "Cards played";
     }
 
-//    private String convert(String player, String cards){
-//        String str = "";
-//        for(int i =0; i < cards.length(); i++){
-//            if(Character.isDigit(cards.charAt(i))){
-//                str += cards.charAt(i);
-//            }
-//        }
-//        return str;
-//    }
+
 }

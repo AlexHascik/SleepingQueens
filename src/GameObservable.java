@@ -36,4 +36,8 @@ public class GameObservable {
     public List<String> getPlayerNames(){
         return playerNames;
     }
+
+    public int getPlayerCount(){
+        return playerNames.size();
+    }
 }
