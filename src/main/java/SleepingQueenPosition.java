@@ -9,4 +9,9 @@ public class SleepingQueenPosition implements Position {
     public int getCardIndex() {
         return cardIndex;
     }
+
+    @Override
+    public String toString(){
+        return String.valueOf(cardIndex) ;
+    }
 }

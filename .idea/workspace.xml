@@ -2,13 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c354058-0291-4e73-a0a8-9efd21c34744" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/DrawingAndThrashPileTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tests/EvaluateNumberedCardsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameAdaptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameFinished.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameFinished.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameFinishedStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameFinishedStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameObservable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SleepingQueens.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SleepingQueens.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AwokenQueenPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AwokenQueenPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AwokenQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AwokenQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CardType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CardType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawingAndThrashPile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DrawingAndThrashPile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvaluateAttack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EvaluateAttack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvaluateNumberedCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EvaluateNumberedCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameAdaptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameAdaptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameFinished.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameFinished.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameFinishedStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameFinishedStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObservable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameObservable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GamePlayerInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GamePlayerInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HandPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HandPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MoveQueen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MoveQueen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayerState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PlayerState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QueenCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/QueenCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShuffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShuffleStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShuffleStrategyA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShuffleStrategyA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShuffleStrategyB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ShuffleStrategyB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SleepingQueenPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SleepingQueenPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SleepingQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SleepingQueens.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +47,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -40,13 +69,38 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "jdk.selected.JAVA_MODULE": "18",
     "last_opened_file_path": "/Users/alexhascik/Documents/GitHub/SleepingQueens",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/main" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.EvaluateNumberedCardsTest.evaluateNumberedCardsTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="SleepingQueens" />
@@ -54,8 +108,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DrawingAndThrashPileTest.discardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SleepingQueens" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DrawingAndThrashPileTest" />
+      <option name="METHOD_NAME" value="discardTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DrawingAndThrashPileTest.drawCardsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SleepingQueens" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DrawingAndThrashPileTest" />
+      <option name="METHOD_NAME" value="drawCardsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvaluateNumberedCardsTest.evaluateNumberedCardsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SleepingQueens" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EvaluateNumberedCardsTest" />
+      <option name="METHOD_NAME" value="evaluateNumberedCardsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.DrawingAndThrashPileTest.discardTest" />
+      <item itemvalue="JUnit.DrawingAndThrashPileTest.drawCardsTest" />
+      <item itemvalue="JUnit.EvaluateNumberedCardsTest.evaluateNumberedCardsTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EvaluateNumberedCardsTest.evaluateNumberedCardsTest" />
+        <item itemvalue="JUnit.DrawingAndThrashPileTest.discardTest" />
+        <item itemvalue="JUnit.DrawingAndThrashPileTest.drawCardsTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>

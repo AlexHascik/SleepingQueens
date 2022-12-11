@@ -30,4 +30,9 @@ public class HandPosition implements Position{
     public int hashCode() {
         return Objects.hash(cardIndex, playerIndex);
     }
+
+    @Override
+    public String toString(){
+        return "Player: " +  String.valueOf(playerIndex) + " Index: " + String.valueOf(cardIndex) + " ";
+    }
 }

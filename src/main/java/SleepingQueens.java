@@ -43,4 +43,6 @@ public class SleepingQueens extends QueenCollection{
     Map<Position, Queen> getQueens() {
         return queens;
     }
+
+
 }
