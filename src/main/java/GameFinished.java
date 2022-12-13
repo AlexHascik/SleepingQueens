@@ -5,7 +5,6 @@ public class GameFinished implements GameFinishedStrategy{
 
     private int scoreToReach;
     private int queensToReach;
-
     private Map<Integer, AwokenQueens> playerAwokenQueens;
     public GameFinished(Map<Integer, AwokenQueens> playerAwokenQueens, int numberOfPlayers){
         this.playerAwokenQueens = playerAwokenQueens;

@@ -30,7 +30,6 @@ public class ShuffleStrategyA implements ShuffleStrategy{
             toDraw.add(drawingPile.get(toDrawAndRemove));
             drawingPile.remove(toDrawAndRemove);
         }
-
         return toDraw;
     }
 

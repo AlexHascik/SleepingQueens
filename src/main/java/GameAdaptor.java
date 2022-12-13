@@ -7,7 +7,6 @@ public class GameAdaptor implements GamePlayerInterface {
     private Game game;
     private ArrayList<Position> cardsToSend;
     private Map<String, Integer> players;
-
     private GameObservable gameObservable;
     public GameAdaptor(GameObservable gameObservable){
 
@@ -17,16 +16,12 @@ public class GameAdaptor implements GamePlayerInterface {
             this.gameObservable = gameObservable;
             game = new Game(gameObservable.getPlayerCount());
         }
-
     }
-
-
 
     @Override
     public String play(String player, String cards) {
         String [] c = cards.split(" ");
         cardsToSend = new ArrayList<>();
-
         for(String command : cards.split(" ")){
             int firstCardPosition = Integer.valueOf(command.charAt(1));
             switch(command.charAt(0)){
@@ -35,11 +30,7 @@ public class GameAdaptor implements GamePlayerInterface {
                 case 's': cardsToSend.add(new SleepingQueenPosition(Integer.parseInt(command.substring(1))));
             }
         }
-
         game.play(players.get(player), cardsToSend);
-
         return "Cards played";
     }
-
-
 }

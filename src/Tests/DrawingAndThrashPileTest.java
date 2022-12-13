@@ -8,13 +8,13 @@ class DrawingAndThrashPileTest {
 
     private DrawingAndThrashPile drawingAndThrashPile;
 
-    void create(){
+    void setUp(){
         drawingAndThrashPile = new DrawingAndThrashPile();
     }
 
     @Test
     void drawCardsTest(){
-        create();
+        setUp();
         List<Card> cardList = drawingAndThrashPile.drawAtStart();
         assertEquals(5, cardList.size());
         cardList.remove(4);
@@ -27,7 +27,7 @@ class DrawingAndThrashPileTest {
 
     @Test
     void discardTest(){
-        create();
+        setUp();
         List<Card> cardList = drawingAndThrashPile.drawAtStart();
         cardList.remove(0);
         drawingAndThrashPile.discardAndDraw(cardList);

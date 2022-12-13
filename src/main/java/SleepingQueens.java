@@ -6,7 +6,6 @@ public class SleepingQueens extends QueenCollection{
     private Stack<Integer> emptyPlaces;
 
     public SleepingQueens(){
-
         //list of possible points
         Integer [] points = {5, 5, 5, 5, 10, 10, 10, 10, 15, 15, 15, 20};
         ArrayList<Integer> pointsList = new ArrayList<>(Arrays.asList(points));
@@ -15,7 +14,6 @@ public class SleepingQueens extends QueenCollection{
         queens = new HashMap<>();
         emptyPlaces = new Stack<>();
         for(int i = 0; i < 12; i++){ addQueen(new Queen(pointsList.get(i)));}
-
     }
 
     @Override
@@ -29,14 +27,11 @@ public class SleepingQueens extends QueenCollection{
 
     @Override
     Optional<Queen> removeQueen(Position position) {
-
         Optional<Queen> toRemove = Optional.ofNullable(queens.remove(position));
-
         if (toRemove.isPresent()) {
             emptyPlaces.push(((SleepingQueenPosition)position).getCardIndex());
         }
         return toRemove;
-
     }
 
     @Override

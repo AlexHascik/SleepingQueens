@@ -10,6 +10,7 @@ public class HandPosition implements Position{
         this.playerIndex = playerIndex;
     }
 
+    @Override
     public int getCardIndex() {
         return cardIndex;
     }

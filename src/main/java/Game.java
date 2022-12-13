@@ -16,9 +16,8 @@ public class Game {
         sleepingQueens = new SleepingQueens();
         players = new ArrayList<>();
 
-
-
         //vytvorime handy pre hracov, pridame referencie na discardandthrashpile, nasledne vytvorime hracov
+        //crates hands for players, add references to discardAndThrashPile, creates players
         Map<Integer, Hand> playerHands = new HashMap<>();
         Map<Integer, AwokenQueens> playerAwokenQueens = new HashMap<>();
         for(int i = 0; i < numberOfPlayers; i++){
@@ -28,18 +27,15 @@ public class Game {
             playerAwokenQueens.put(i, awokenQueens);
             MoveQueen moveQueen = new MoveQueen(playerHands, sleepingQueens, playerAwokenQueens);
             EvaluateAttack evaluateAttack = new EvaluateAttack(CardType.DRAGON, playerHands, moveQueen);
-
             players.add(new Player(i, hand, evaluateAttack, moveQueen, awokenQueens));
         }
 
         gameState = new GameState(numberOfPlayers, 0);
-        //rozdanie 5 kariet kazdemu hracovi a priradenie do gamestateu
+        //deals every player 5 cards at the beginning of the game
         Map<HandPosition, Optional<Card>> cards = new HashMap<>();
         Map<Integer, Optional<Card>> playerCards = new HashMap<>();
         for(Player player : players){
             List<Card> toDraw = drawingAndThrashPile.drawAtStart();
-
-
             for(int i = 0; i < 5; i++){
                 cards.put(new HandPosition(i, player.getPlayerIdx()), Optional.ofNullable(toDraw.get(i)));
                 playerCards.put(i, Optional.ofNullable(toDraw.get(i)));
@@ -48,24 +44,16 @@ public class Game {
         }
         gameState.setCards(cards);
         updateGameState();
-
         gameFinished = new GameFinished(playerAwokenQueens, numberOfPlayers);
-
-
-
-
     }
 
     public void nextTurn(GameState gameState){
         gameState.setOnTurn((gameState.getOnTurn() +1 ) % players.size());
     }
-
     public GameState getGameState() {
         return gameState;
     }
-
     public Optional<GameState> play(int playerIdx, List<Position> cards){
-
         if(players.get(playerIdx).play(cards)){
             gameState.setOnTurn((gameState.getOnTurn() + 1) % players.size());
             updateGameState();
@@ -77,7 +65,6 @@ public class Game {
         } else{
             System.out.println("Try again");
         }
-
         return Optional.ofNullable(gameState);
     }
 
@@ -103,11 +90,6 @@ public class Game {
             }
         }
         gameState.setAwokenQueens(playerAwokenQueens);
-
-
-
-
-
     }
     public ArrayList<Player> getPlayers(){
         return players;

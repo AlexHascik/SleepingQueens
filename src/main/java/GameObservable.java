@@ -2,11 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GameObservable {
-
-
     private List<GameObserver> gameObservers;
     private List<String> playerNames;
-
     public GameObservable(){
         gameObservers = new ArrayList<>();
         playerNames= new ArrayList<>();

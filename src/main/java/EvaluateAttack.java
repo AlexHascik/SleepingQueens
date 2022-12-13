@@ -5,7 +5,6 @@ public class EvaluateAttack {
 
     private CardType defenseCardType;
     private MoveQueen moveQueen;
-
     private Map<Integer, Hand> playerHands;
 
     public EvaluateAttack(CardType defenseCardType, Map<Integer, Hand> playerHands, MoveQueen moveQueen){
@@ -25,7 +24,11 @@ public class EvaluateAttack {
             playerHands.get(targetPlayerIdx).pickCards(positions);
             playerHands.get(targetPlayerIdx).removePickedCardsAndRedraw();
         } else{
-            moveQueen.play(targetQueen, playerIdx);
+            if(defenseCardType == CardType.KNIGHT){
+                return moveQueen.play(targetQueen, playerIdx);
+            } else if(defenseCardType == CardType.SLEEPING_POTION){
+                return moveQueen.play(targetQueen);
+            }
         }
         return true;
     }

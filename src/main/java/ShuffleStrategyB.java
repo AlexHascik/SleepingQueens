@@ -14,7 +14,6 @@ public class ShuffleStrategyB implements ShuffleStrategy{
 
     @Override
     public List<Card> shuffle(List<Card> discard, List<Card> drawingPile, List<Card> thrashPile) {
-
         this.thrashPile.addAll(thrashPile);
         this.drawingPile.addAll(drawingPile);
         ArrayList<Card> toDraw = new ArrayList<>();

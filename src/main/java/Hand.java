@@ -16,7 +16,6 @@ public class Hand {
     }
 
     public Optional<List<Card>> pickCards(List<HandPosition> positions){
-
         if(!positions.isEmpty()){
             for(HandPosition position : positions){
                 pickedCards.add(cards.get(position.getCardIndex()));
@@ -26,7 +25,6 @@ public class Hand {
         return Optional.empty();
     }
     public Map<HandPosition, Card> removePickedCardsAndRedraw(){
-
         cards.removeAll(pickedCards);
         Map<HandPosition, Card> toReturn = new HashMap<>();
         List<Card> toDraw = drawingAndThrashPile.discardAndDraw(pickedCards);
@@ -41,7 +39,6 @@ public class Hand {
         pickedCards.clear();
     }
     public HandPosition hasCardOfType(CardType type){
-
         for(int i = 0; i < cards.size(); i++){
             if(cards.get(i).getCardType() == type){
                 return new HandPosition(i, playerIdx);

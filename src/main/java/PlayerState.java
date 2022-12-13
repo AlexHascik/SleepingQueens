@@ -6,7 +6,6 @@ public class PlayerState {
 
     private Map<Integer, Optional<Card>> cards;
     private Map<Integer, Queen> awokenQueens;
-
     public PlayerState(){
         cards = new HashMap<>();
         awokenQueens = new HashMap<>();
@@ -18,7 +17,6 @@ public class PlayerState {
     public Map<Integer, Queen> getAwokenQueens(){
         return awokenQueens;
     }
-
     public void setCards(Map<Integer, Optional<Card>> cards){
         this.cards = new HashMap<>(cards);
     }

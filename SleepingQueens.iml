@@ -40,5 +40,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module" module-name="main" scope="TEST" />
+    <orderEntry type="library" name="google.code.maven.play.plugin.eamelink.mockito.all1" level="project" />
   </component>
 </module>

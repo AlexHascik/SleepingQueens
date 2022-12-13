@@ -1,9 +1,6 @@
 import java.util.*;
 
 public class DrawingAndThrashPile {
-
-    //vytvaranie
-
     private final ArrayList<Card> drawingPile;
     private ArrayList<Card> thrashPile;
     private final ArrayList<Card> discardedThisTurn;
@@ -18,7 +15,7 @@ public class DrawingAndThrashPile {
         addCards();
     }
 
-    //vytvori drawingPile so vsetkymi kartami, zamiesa;
+    //creates drawing pile, shuffles it;
     private void addCards(){
         for(int i = 0; i < 8; i++){ drawingPile.add(new Card(CardType.KING, 0));}
         for(int i  = 0; i < 4; i++){

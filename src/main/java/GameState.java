@@ -18,13 +18,11 @@ public class GameState {
         }
         awokenQueens = new HashMap<>();
         cardsDiscardedLastTurn = new ArrayList<>();
-
     }
 
     public void setSleepingQueens(Set<SleepingQueenPosition> sleepingQueens){
         this.sleepingQueens = new HashSet<>(sleepingQueens);
     }
-
     public Set<SleepingQueenPosition> getSleepingQueens(){
         return sleepingQueens;
     }
@@ -65,7 +63,7 @@ public class GameState {
         String s3 = "Sleeping Queens positions: " + sleepingQueens + "\n";
         String s4 = "Awoken Queens positions: " + awokenQueens + "\n";
         String s5 = "Cards discarded last turn: " + cardsDiscardedLastTurn + "\n";
-//        String s6 = "Cards: " + cards + "\n"; asi by sa nemalo vypisovat
+//        String s6 = "Cards: " + cards + "\n";
 
         return s1 + s2 + s3 + s4 + s5;
     }
